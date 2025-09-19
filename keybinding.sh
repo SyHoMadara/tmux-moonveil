@@ -19,3 +19,9 @@ bind_switch "${mod}9" 9
 # Alternate move between panes
 tmux bind -n S-Left previous-window
 tmux bind -n S-Right next-window
+
+tmux $bind "${mod}," command-prompt -p 'Workspace name:' 'rename-window "%%"'
+tmux $bind "${mod}X" kill-window
+
+tmux $bind "C-Left" send-key C-a
+tmux $bind "C-Right" send-key C-e
