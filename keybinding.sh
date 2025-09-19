@@ -23,5 +23,5 @@ tmux bind -n S-Right next-window
 tmux $bind "${mod}," command-prompt -p 'Workspace name:' 'rename-window "%%"'
 tmux $bind "${mod}X" kill-window
 
-tmux bind -n Home send-keys C-a
-tmux bind -n End send-keys C-e
+#tmux bind -n Home send-keys C-a
+#tmux bind -n End send-keys C-e
